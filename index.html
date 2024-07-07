@@ -3,116 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BADARR | Professional Landing Page</title>
+    <title>iPhone Calculator</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <a href="#"><img src="images/logo.png" alt="BADARR Logo" id="logo"></a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <div class="calculator">
+        <div class="display">0</div>
+        <button class="button gray">AC</button>
+        <button class="button gray">+/-</button>
+        <button class="button gray">%</button>
+        <button class="button orange">÷</button>
+        <button class="button black">7</button>
+        <button class="button black">8</button>
+        <button class="button black">9</button>
+        <button class="button orange">×</button>
+        <button class="button black">4</button>
+        <button class="button black">5</button>
+        <button class="button black">6</button>
+        <button class="button orange">-</button>
+        <button class="button black">1</button>
+        <button class="button black">2</button>
+        <button class="button black">3</button>
+        <button class="button orange">+</button>
+        <button class="button black">0</button>
+        <button class="button black">.</button>
+        <button class="button orange">=</button>
+    </div>
 
-    <section class="hero" id="home">
-        <div class="container">
-            <h1>Welcome to BADARR</h1>
-            <p>Delivering excellence with every project.</p>
-            <a href="#about" class="btn">Learn More</a>
-        </div>
-    </section>
-
-    <main>
-        <section class="about" id="about">
-            <div class="container">
-                <h2>About Us</h2>
-                <p>
-                    At BADARR, we pride ourselves on delivering top-notch services that consistently exceed expectations. Our team of dedicated professionals is committed to providing high-quality solutions tailored to meet the unique needs of each client. With years of experience in the industry, we have developed a reputation for excellence and reliability.
-                    <br><br>
-                    Our approach is centered around understanding the specific goals and challenges of our clients. We believe that every project is an opportunity to showcase our creativity and expertise. From the initial consultation to the final delivery, we work closely with our clients to ensure that every aspect of the project aligns with their vision.
-                    <br><br>
-                    At BADARR, we offer a wide range of services including web development, digital marketing, and SEO services. Our web development team is adept at creating stunning, responsive websites that not only look great but also provide an exceptional user experience. Our digital marketing experts employ strategic campaigns to boost your online presence, ensuring that your brand reaches the right audience. Additionally, our SEO services are designed to optimize your website, improving its ranking on search engines and driving more organic traffic.
-                    <br><br>
-                    We are passionate about what we do, and this passion translates into the quality of our work. Our goal is to build long-term relationships with our clients, helping them achieve sustained success. Whether you are a small business looking to establish a digital footprint or a large corporation seeking to enhance your online strategy, BADARR is here to help.
-                    <br><br>
-                    Thank you for considering BADARR for your needs. We look forward to the opportunity to work with you and help your business thrive in the digital world.
-                </p>
-            </div>
-        </section>
-
-        <section class="features" id="services">
-            <div class="container">
-                <h2>Our Services</h2>
-                <div class="feature-box">
-                    <i class="fas fa-laptop-code"></i>
-                    <h3>Web Development</h3>
-                    <p>Creating stunning and responsive websites.</p>
-                </div>
-                <div class="feature-box">
-                    <i class="fas fa-bullhorn"></i>
-                    <h3>Digital Marketing</h3>
-                    <p>Boosting your online presence with strategic marketing.</p>
-                </div>
-                <div class="feature-box">
-                    <i class="fas fa-chart-line"></i>
-                    <h3>SEO Services</h3>
-                    <p>Optimizing your site to rank higher on search engines.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="contact" id="contact">
-            <div class="container">
-                <h2>Contact Us</h2>
-                <form>
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                    
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                    
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" required></textarea>
-                    
-                    <button type="submit" class="btn">Send Message</button>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="social">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-            <p>&copy; 2024 BADARR. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script>
-        // JavaScript for smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
